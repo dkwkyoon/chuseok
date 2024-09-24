@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>맛있는 한가위 음식</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="moon.png">
+
+	<style type="text/css">
+		@font-face {
+	    font-family: 'CookieRun-Regular';
+	    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+		}	
+
+		.dongle-light {
+		  font-family: "Dongle", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.dongle-regular {
+		  font-family: "Dongle", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.dongle-bold {
+		  font-family: "Dongle", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+
+
+		body{background: #1b2751;
+			color: white;}
+			h1{margin:0; padding:0; font-family: 'CookieRun-Regular';  font-size: 2rem;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center; }
+		.wrap{width: 1000px; margin: auto; }
+		.flex {display: flex;}
+		.chu {font-size: 6.6rem; color: black;
+			  -webkit-text-stroke: .3px #fae560; text-shadow: 3px 4px 3px LightGoldenRodYellow; margin: 0;}
+		.outline {	-webkit-text-stroke: .05px #1b2751;}
+		.star{margin: 0; padding: 0;
+			background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDlpNngzc215OXp2OHZwc2huNnFucGJxd2hrdWx3cmxxcHk3bG93bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Bpm9iMpbGiKg2Q2rM1/giphy.webp');
+			background-position: center;
+				}
+		.fullmoon{background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN240a2xpbGtyMzR1MGlkM3pvdHhzYWRqM2wydGQwMmoybG84djVhZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/kDfCAwQSDRRrTLC4Bj/giphy.webp');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: 95% center;
+				text-align: left;}
+
+			.container{
+			padding-top: 100px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap:0;}
+			
+			.table{
+		  display: inline-block;
+		  width: 800px;
+		  border-bottom: 330px solid #af6814;
+		  border-left: 100px solid transparent;
+		  border-right: 100px solid transparent;  
+		  margin: 0; padding: 0;
+				}
+
+			.undertable{
+				display: inline-block;
+				width: 1000px;
+				height: 35px;
+				background-color: #824906;
+				margin:0; 
+				padding:0;	}
+
+			.legcon{display: flex;
+			align-items: center;
+			gap:90%;}
+
+			.leg{display: inline-block;
+				width: 60px;
+				height: 90px;
+				background-color:  #af6814;
+				margin: 0;padding: 0;}
+			.fs{width: 270px; position: absolute; top:420px; left:24%}
+			.fjc{width: 270px; position: absolute; top:270px; left:31.5%}
+			.fg{width: 275px; position: absolute; top:410px; left:42%}
+			.fj{width: 275px; position: absolute; top:260px; left:52%}
+			.fy{width: 265px; position: absolute; top:418px; left:60%}
+
+
+		#hidKcal1{
+    	position: absolute;
+        top:530px;
+        left:28%;
+    	color: white;
+    	 text-shadow: 
+        -1.5px -1.5px 0 black,  
+        1.5px -1.5px 0 black,  
+        -1.5px 1.5px 0 black,  
+        1.5px 1.5px 0 black;
+    	display: none;
+    	font-size: 2.8rem;
+   		font-family: "Dongle", sans-serif;
+		align-items: center;}
+
+    	#hidKcal2{
+    	position: absolute;
+        top:370px;
+        left:35.3%;
+    	color: white;
+    	text-shadow: 
+        -1.5px -1.5px 0 black,  
+        1.5px -1.5px 0 black,  
+        -1.5px 1.5px 0 black,  
+        1.5px 1.5px 0 black;
+    	display: none;
+    	font-size: 2.8rem;
+   		font-family: "Dongle", sans-serif;
+		align-items: center;}
+
+		#hidKcal3{
+    	position: absolute;
+        top:530px;
+        left:45.8%;
+    	color: white;
+    	text-shadow: 
+        -1.5px -1.5px 0 black,  
+        1.5px -1.5px 0 black,  
+        -1.5px 1.5px 0 black,  
+        1.5px 1.5px 0 black;
+    	display: none;
+    	font-size: 2.8rem;
+   		font-family: "Dongle", sans-serif;
+		align-items: center;}
+
+		#hidKcal4{
+    	position: absolute;
+        top:370px;
+        left:56%;
+    	color: white;
+    	text-shadow: 
+        -1.5px -1.5px 0 black,  
+        1.5px -1.5px 0 black,  
+        -1.5px 1.5px 0 black,  
+        1.5px 1.5px 0 black;
+    	display: none;
+    	font-size: 2.8rem;
+    	font-family: "Dongle", sans-serif;
+		align-items: center;}
+
+
+		#hidKcal5{
+    	position: absolute;
+        top:530px;
+        left:64.3%;
+    	color: white;
+    	text-shadow: 
+        -1.5px -1.5px 0 black,  
+        1.5px -1.5px 0 black,  
+        -1.5px 1.5px 0 black,  
+        1.5px 1.5px 0 black;
+    	display: none;
+    	font-size: 2.8rem;
+   		font-family: "Dongle", sans-serif;
+		align-items: center;}
+
+		#stand{
+    	position: absolute;
+        top:285px;
+        left:47.2%;
+    	color: lightgray;
+    	display: none;
+    	font-size: 1.3rem;
+   		font-family: "Dongle", sans-serif;
+   		 font-weight: 300;
+		 font-style: normal;
+		align-items: center;
+		}
+
+	.butcen{text-align: center; padding-top: 80px;}
+
+	  button {
+      padding: 6px 30px 5px 30px;
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      font-family:"Dongle", sans-serif;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.4rem;
+       font-weight: 300;
+		 font-style: normal;
+    }
+
+
+
+	</style>
+</head>
+<body>
+	<section class="star">
+		<div class="wrap fullmoon"> 
+			<h1 style="padding:45px 0px;"><span class="chu">한가위</span>ㅤㅤ<span class="outline">하면 떠오르는 음식은?</span></h1>
+		</div>
+	</section>
+
+	<section>
+		<div class="container wrap">
+			<span class="table"></span>
+			<span class="undertable"></span>
+		</div>
+		<div class="wrap legcon">
+			<span class="leg"></span> <span class="leg"></span>
+		</div>
+		<div class="wrap">
+			<img class='fs' src='fs.png'>
+			<img class='fjc' src='fjc.png'>
+			<img class='fg' src='fg.png'>
+			<img class='fj' src='fj.png'>
+			<img class='fy' src='fy.png'>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap butcen">
+		<button id="music">신나는 음악 듣기</button>
+		<audio id="happy" src="ohyeah.mp3"></audio>
+		<button id="kcalOpen">칼로리 보기</button>
+		<div id="hidKcal1">약 224kcal</div>
+		<div id="hidKcal2">약 204kcal</div>
+		<div id="hidKcal3">약 406kcal</div> 
+		<div id="hidKcal4">약 203kcal</div> 
+		<div id="hidKcal5">약 276kcal</div> 
+		<div id="stand">150g 기준입니다.</div>
+	</div>
+	</section>
+
+
+	<script type="text/javascript">
+		 let playstate = "show";
+
+   		const but = document.getElementById("kcalOpen");
+    	const calorieDisplays = [ document.getElementById("hidKcal1"),
+    							 document.getElementById("hidKcal2"),
+    							 document.getElementById("hidKcal3"),
+    							 document.getElementById("hidKcal4"),
+    							 document.getElementById("hidKcal5"),
+    							 document.getElementById("stand") ];   
+    	
+    but.onclick = function () {
+      if (playstate == "show") {
+        calorieDisplays.forEach(function(item) {
+        item.style.display = "block";
+     	});
+        but.innerHTML = "칼로리 숨겨!!";
+        playstate = "hid";
+
+      } else if (playstate == "hid") {
+        calorieDisplays.forEach(function(item) {
+        item.style.display = "none";
+      	});
+        but.innerHTML = "칼로리 보기";
+         playstate = "show";
+
+          alert("맛있으면 0kcal~")
+      }
+    };
+
+    let musicState = "musicon";
+        const butMusic = document.getElementById("music");
+        const happy = document.getElementById("happy");
+
+        butMusic.onclick = function () {
+            if (musicState == "musicon") {
+                happy.play();
+                butMusic.innerHTML = "신나는 음악 끄기";
+                musicState = "musicoff";
+            } else if (musicState == "musicoff") {
+                happy.pause();
+                butMusic.innerHTML = "신나는 음악 듣기";
+                musicState = "musicon";
+            }
+        };
+        
+	</script>		 
+
+</body>
+</html>
